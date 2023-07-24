@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background:#000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: back;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: linear;
+    animation-timing-function: 4s;
+}
+
+@keyframes back {
+    0%{background-color: white;}
+    50%{background: grey;}
+    100%{background-image: url(./icons/pexels-pixabay-268533.jpg);}
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#f5f5f5e0;
+    width: 100%;
+    animation-name: container;
+    position: relative;
+    animation-duration:4s;
+    animation-timing-function: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+ }
+ 
+ @keyframes container{
+     0%{left: -1000px;}
+     100%{left: 0px;}
+ }
+
+
+.container h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    
+
+}
+
+.navbar1{
+    margin: 0 20px;
+}
+
+.navbar1 ul{
+    display: flex;
+    gap: 1.5rem;
+    animation-name: container2;
+    position: relative;
+    animation-duration:5s;
+    animation-timing-function: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+ }
+ 
+ @keyframes container2{
+     0%{top: -1000px;}
+     100%{top: 0px;}
+}
+
+.navbar1 ul li{
+    list-style: none;
+}
+
+.navbar1 a{
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 13px;
+    color: #1b1b1b;
+    font-weight: 990;
+}
+
+.navbar1 a:hover{
+    background-color:transparent;
+    transition: all .3s linear;
+    color: #080808;
+    width:60%;
+    border: 1px double #030303;
+    border-radius: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+}
+
+.navbar2 a:hover{
+    background-color:transparent;
+    transition: all .3s linear;
+    color: #080808;
+    width:60%;
+    border: 1px double #030303;
+    border-radius: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+}
+
+.navbar2{
+    margin: 0 20px;
+    font-family:monospace;
+}
+
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    animation-name: container3;
+    position: relative;
+    animation-duration:5s;
+    animation-timing-function: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+ }
+ 
+ @keyframes container3{
+     0%{top: -1000px;}
+     100%{top: 0px;}
+}
+
+
+.navbar2 ul{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar2 ul li{
+    list-style: none;
+}
+
+.navbar2 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color:#2b2b2b;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar2 img{
+    display:flex;
+    gap: 1rem;
+}
+
+.navbar2 img:hover{
+    background-color:transparent;
+    transition: all .3s linear;
+    color: #080808;
+    width:60%;
+    border: 1px double #030303;
+    border-radius: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.para h2{
+   text-align: center;
+   margin-top: 80px;
+   font-size: 48px;
+   font-weight: 990;
+   color: white;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   animation-name: header;
+   position: relative;
+   animation-duration: 6s;
+   animation-timing-function: 3s;
+   animation-fill-mode: forwards;
+   animation-direction: linear;
+}
+
+@keyframes header{
+    0%{top: -1000px;}
+    100%{top: 20px;}
+}
+
+.para p{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 999;
+    color: white; 
+    animation-name: par;
+    position: relative;
+    animation-duration:8s;
+    animation-timing-function: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: linear;
+ }
+ 
+ @keyframes par{
+     0%{left: -1000px;}
+     100%{left: 20px;}
+ }
+ 
+
+
+.btn{
+    text-align: center;
+    margin-top:50px;
+    opacity: 0;
+    animation-name: buut;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    opacity: 0;
+
+}
+
+@keyframes buut {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+
+.btn .men{
+    border-radius: 8x;
+    width:10%;
+    height: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.btn .men:hover{
+    transform: rotateY(180deg);
+}
+    
+
+.btn .women{
+    border-radius: 8x;
+    width:10%;
+    height: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.btn .women:hover{
+    transform: rotateY(190deg);
+}
+    
+.sea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 430px;
+    animation-name: par;
+    position: relative;
+    animation-duration:8s;
+    animation-timing-function: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: linear;
+ }
+ 
+ @keyframes par{
+     0%{left: -1000px;}
+     100%{left: 20px;}
+ }
+
+.submit{
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 500px;
+    cursor: pointer;
+    
+}
+
+.submit input{
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+    animation-name: bot;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    opacity: 0;
+
+}
+
+@keyframes bot {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+
+
+
